@@ -1,12 +1,16 @@
 <template>
-<h1>BLOG</h1>
-    <article v-for="post in posts" :key="post.id">
-        <h2>{{ post.title }}</h2>
-        <p>{{  post.body.slice(0,1000) }}</p>
-        <p>
-            <NuxtLink :to="`/blog/${post.id}`">Lire plus</NuxtLink>
-        </p>
-    </article>
+    <div>
+        <p class="text-[2rem] font-medium text-black">BLOG</p>
+        <div class="flex-col max-h-[80vh] overflow-y-scroll space-y-[2rem] m-[1rem] ml-[2rem]">
+            <article v-for="post in posts" :key="post.id">
+                <p class="text-[1rem] font-medium">{{ post.title }}</p>
+                <p class="p-2">{{  post.body.slice(0,1000) }}</p>
+                <p class="pl-2 ">
+                    <NuxtLink class="underline text-gray" :to="`/blog/${post.id}`">Lire plus</NuxtLink>
+                </p>
+            </article>
+        </div>
+    </div>
 </template>
 
 <script setup>

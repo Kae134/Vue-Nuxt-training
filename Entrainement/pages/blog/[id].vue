@@ -1,10 +1,13 @@
 <template>
-    <main>
-        <div v-if="post">
-            <h1>{{ post.title }}</h1>     
+    <main class="flex-col space-y-[2rem] space-x-[2rem] ">
+        <h1 class="text-[1.5rem]">{{ post.title }}</h1>     
+        <div class="flex-col space-y-[1rem]" v-if="post">
             <p>
                 {{ post.body }}
             </p> 
+            <p>
+                <NuxtLink class="underline font-bold" to="/blog">Retour</NuxtLink>
+            </p>
         </div>
         <div v-else>
             <p>LOADING ...</p>
