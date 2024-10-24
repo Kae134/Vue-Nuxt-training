@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p class="text-[2rem] font-medium text-black">BLOG</p>
+        <p class="text-[2rem] font-medium text-black">BLOGS</p>
         <div class="flex-col max-h-[80vh] overflow-y-scroll space-y-[2rem] m-[1rem] ml-[2rem]">
             <article v-for="post in posts" :key="post.id">
                 <p class="text-[1rem] font-medium">{{ post.title }}</p>

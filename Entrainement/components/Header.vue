@@ -1,8 +1,9 @@
 <template>
-    <nav class="bg-gray-800 p-4 sticky top-0 z-10">
+    <nav class="flex justify-between bg-gray-800 p-4 sticky top-0 z-10">
         <div class="flex space-x-4">
             <NuxtLink class="text-white hover:text-gray-300" to="/">Accueil</NuxtLink>
             <NuxtLink class="text-white hover:text-gray-300" to="/blog">Blog</NuxtLink>
         </div>
+        <NuxtLink class="text-white hover:text-gray-300" to="/login">Login (test)</NuxtLink>
     </nav>
 </template>

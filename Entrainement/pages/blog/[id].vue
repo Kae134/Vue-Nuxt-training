@@ -1,7 +1,7 @@
 <template>
     <main class="flex-col space-y-[2rem] space-x-[2rem] ">
-        <h1 class="text-[1.5rem]">{{ post.title }}</h1>     
         <div class="flex-col space-y-[1rem]" v-if="post">
+        <h1 class="text-[1.5rem]">{{ post.title }}</h1>     
             <p>
                 {{ post.body }}
             </p> 
